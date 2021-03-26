@@ -389,7 +389,4 @@ function(o,a,i)
 end
 )
 
-t=o:section(TypedSection,"usetips",translate("广告过滤大师过滤HTTPS广告说明"))
-t.anonymous = true
-t:append(Template("koolproxy/feedback"))
-return o
+o = Map("koolproxy", translate("广告过滤大师过滤HTTPS广告说明"), translate("使用过滤HTTPS协议模式时需要为相应客户端安装证书并信任。证书下载方法：浏览器输入<font color='#FF0000'>110.110.110.110</font>"))
