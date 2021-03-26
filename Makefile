@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=luci-app-godproxy
+PKG_NAME:=luci-app-adproxy
 PKG_VERSION:=3.8.5
-PKG_RELEASE:=3-20210325
+PKG_RELEASE:=2021-03-26
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/luci-app-godproxy
+define Package/luci-app-adproxy
 	SECTION:=luci
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
@@ -18,12 +18,12 @@ endef
 define Build/Compile
 endef
 
-define Package/luci-app-godproxy/conffiles
+define Package/luci-app-adproxy/conffiles
 	/etc/config/koolproxy
 	/usr/share/koolproxy/data/rules/
 endef
 
-define Package/luci-app-godproxy/install
+define Package/luci-app-adproxy/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci
 	cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
 	$(INSTALL_DIR) $(1)/
@@ -51,7 +51,7 @@ ifeq ($(ARCH),aarch64)
 endif
 endef
 
-define Package/luci-app-godproxy/postinst
+define Package/luci-app-adproxy/postinst
 #!/bin/sh
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	( . /etc/uci-defaults/luci-koolproxy ) && rm -f /etc/uci-defaults/luci-koolproxy
@@ -60,4 +60,4 @@ fi
 exit 0
 endef
 
-$(eval $(call BuildPackage,luci-app-godproxy))
+$(eval $(call BuildPackage,luci-app-adproxy))
