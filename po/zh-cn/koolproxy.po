@@ -41,6 +41,6 @@ msgid "Upload backup file,The file name must be koolproxyCA.tar.gz"
 msgstr "上传恢复已备份的证书，文件名必须为koolproxyCA.tar.gz"
 
 msgid "ACLs is a tools which used to designate specific IP filter mode,The MAC addresses added to the list will be filtered using https"
-msgstr "访问控制列表是用于指定特殊IP过滤模式的工具，如为已安装证书的客户端开启https广告过滤等，MAC或者IP必须填写其中一项。"
+msgstr "访问控制列表是用于单独指定客户端过滤模式的工具，如为已安装证书的客户端开启https广告过滤等，MAC或者IP必须填写其中一项。"
 
 
