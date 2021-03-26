@@ -27,7 +27,7 @@ else
 	status = translate("<strong class=\"koolproxy_status\"><font color=\"red\">广告过滤大师  未运行</font></strong>")
 end
 
-o = Map("koolproxy", translate("广告过滤大师"), translate("使用HTTPS过滤模式时需要为客户端安装证书并信任。证书下载方法：在客户端使用浏览器打开"110.110.110.110"）"))
+o = Map("koolproxy", translate("广告过滤大师"), translate("使用HTTPS过滤模式时需要为客户端安装证书并信任。证书下载方法：在客户端使用浏览器打开110.110.110.110） <br /><font color=\"red\"><br /></font>"))
 
 o.template="koolproxy/koolproxy_status"
 t = o:section(TypedSection, "global")
