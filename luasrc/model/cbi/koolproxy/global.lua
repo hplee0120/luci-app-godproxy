@@ -388,5 +388,3 @@ function(o,a,i)
 	end
 end
 )
-
-o = Map("koolproxy", translate("广告过滤大师过滤HTTPS广告说明"), translate("使用过滤HTTPS协议模式时需要为相应客户端安装证书并信任。证书下载方法：浏览器输入<font color='#FF0000'>110.110.110.110</font>"))
