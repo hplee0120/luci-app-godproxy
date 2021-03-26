@@ -19,6 +19,9 @@ msgstr "内部IP地址"
 msgid "Client Remarks"
 msgstr "客户端备注"
 
+msgid "MAC Address"
+msgstr "内部MAC地址"
+
 msgid "Upload Restore"
 msgstr "上传恢复证书"
 
