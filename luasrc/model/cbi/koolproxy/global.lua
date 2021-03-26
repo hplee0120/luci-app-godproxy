@@ -284,7 +284,7 @@ end
 function e.write(self, section, value)
 end
 
-t=o:section(TypedSection,"acl_rule",translate("访问控制（单独指定客户端过滤模式）"),
+t=o:section(TypedSection,"acl_rule",translate("访问控制"),
 translate("ACLs is a tools which used to designate specific IP filter mode,The MAC addresses added to the list will be filtered using https"))
 t.template="cbi/tblsection"
 t.sortable=true
@@ -319,7 +319,7 @@ e:value(1,translate("过滤 HTTP"))
 e:value(2,translate("过滤HTTP + HTTPS"))
 e:value(3,translate("过滤全端口"))
 
-t=o:section(TypedSection,"rss_rule",translate("广告过滤大师 规则订阅"), translate("请确保订阅规则的兼容性"))
+t=o:section(TypedSection,"rss_rule",translate("规则订阅"), translate("请确保订阅规则的兼容性"))
 t.anonymous=true
 t.addremove=true
 t.sortable=true
@@ -389,7 +389,7 @@ function(o,a,i)
 end
 )
 
-t=o:section(TypedSection,"usetips",translate("广告过滤大师下载证书使用说明"))
+t=o:section(TypedSection,"usetips",translate("广告过滤大师过滤HTTPS广告说明"))
 t.anonymous = true
 t:append(Template("koolproxy/feedback"))
 return o
