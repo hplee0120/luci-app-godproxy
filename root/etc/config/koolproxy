@@ -1,5 +1,5 @@
 config global
-	option time_update '10'
+	option time_update 'nil'
 	option koolproxy_port '0'
 	option startup_delay '0'
 	option koolproxy_acl_default '1'
